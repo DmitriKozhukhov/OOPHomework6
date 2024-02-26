@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.model.Prefect;
 import org.example.model.Student;
 import org.example.model.StudentGroup;
 import org.example.model.Teacher;
@@ -23,7 +24,8 @@ public class Controller {
         Student student1 = studentService.StudentCreate(new Student("Ivan Ivanov"));
         Student student2 = studentService.StudentCreate(new Student("Petr Petrov"));
         Student student3 = studentService.StudentCreate(new Student("Fedor Fedorov"));
-        List<Student> studentList = new ArrayList<>(Arrays.asList(student1, student2, student3));
+        Prefect prefect1 = (Prefect) studentService.StudentCreate(new Prefect("Boris Boris"));
+        List<Student> studentList = new ArrayList<>(Arrays.asList(student1, student2, student3, prefect1));
         Teacher teacher1 = teacherService.TeacherCreate(new Teacher("Isaac Newton"));
         StudentGroup group1 = groupService.studentGroupCreate(teacher1, studentList);
         System.out.println("student1 = " + student1);

@@ -5,4 +5,6 @@
 * Liskov substitution principle (Принцип подстановки Лисков)<br>
 Класс Prefect наследует от класса Student расширяет  его функциональность
 путем добавления метода viewJournal
-* Interface segregation principle (Принцип разделения интерфейса)
+* Interface segregation principle (Принцип разделения интерфейса)<br>
+Применяется в интерфейсе SearchStudent, который реализует поиск студентов и
+запускается в контроллере.
